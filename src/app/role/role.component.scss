@@ -1,0 +1,37 @@
+
+.role-card{
+  width: 40%;
+  margin: 0 0 16px 5%;
+  padding: 0 16px 16px 16px;
+  display: inline-block;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  position: relative;
+  transition: all .2s ease-in-out;
+  border: 1px solid #FAFAFA;
+  border-left: 4px solid #4e4e4e;
+  border-bottom: 1px solid #4e4e4e;
+}
+
+.role-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-row span {
+  margin-left: 12px;
+}
+
+.card-row{
+  margin-top: 18px;
+}
+
+.user-span{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.display-flex{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,36 @@
+.alert-notification{
+  position: fixed;
+  display: flex;
+  right: 16px;
+  top: 64px;
+  padding: 16px;
+  animation-name: bump;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)
+}
+
+@keyframes bump {
+  0%   {right:-100%;}
+  100% {right:16px;}
+}
+
+.alert-notification span{
+ margin-right: 12px;
+}
+
+.alert-notification span i{
+  font-size: 24px;
+}
+
+.alert-notification .alert-danger{
+  border: 1px solid #85001e;
+}
+
+.alert-notification .alert-success{
+  border: 1px solid #215f0c;
+}
+
+.alert-notification .alert-warning{
+  border: 1px solid #853d0c;
+}

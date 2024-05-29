@@ -1,0 +1,18 @@
+<div class="top-header">
+  <div class="menu-bar-btn" (click)="leftMenuSlide()"><i class="ph ph-list"></i></div>
+  <div class="top-header-right">
+    <div class="top-header-icon"><i class="ph ph-arrows-counter-clockwise"></i></div>
+    <div class="top-header-icon"><i class="ph ph-arrows-out"></i></div>
+    <div class="top-header-icon" (click)="showNotification()"><i class="ph ph-bell"></i>
+      <!-- Badge for notification count -->
+      <span class="badge-container">
+       <span class="badge">{{ notificationCount }}</span>
+     </span>
+   </div>
+   <div class="top-header-icon user-dd-menu" (click)="userDropDown()"><i class="ph ph-user"></i></div>
+
+ </div>
+</div>
+<app-notification *ngIf="isNotificationListVisible"></app-notification>
+
+<app-user-drop-down *ngIf="isUserDropDownVisible"></app-user-drop-down>

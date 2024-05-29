@@ -1,0 +1,16 @@
+<div class="main-container">
+  <div class="left-container" [ngClass]="isPanelOpen ? 'openLeftPanel' : 'closeLeftPanel' ">
+    <div class="menu-top-logo">
+      <img src="../../assets/images/login-logo.svg">
+    </div>
+    <div class="left-navigation" >
+        <app-left-navigation></app-left-navigation>
+    </div>
+  </div>
+  <div class="right-container" [ngClass]="isPanelOpen ? 'openLeftPanel' : 'closeLeftPanel' ">
+    <app-top-header (panelOpenClose)="panelOpenClose($event)"></app-top-header>
+    <app-form-designer></app-form-designer>
+  </div>
+</div>
+
+

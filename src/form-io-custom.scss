@@ -1,0 +1,300 @@
+@import "variables.scss";
+
+/* Customize Form.io Form Builder */
+
+.formbuilder .formcomponents{
+  width: 20% !important;
+  max-width: 20% !important;
+  flex: none;
+}
+
+.formbuilder .formarea{
+  width: 80% !important;
+  max-width: 80% !important;
+  flex: none;
+}
+
+#group-container-basic,#group-container-advanced,
+#group-container-layout,#group-container-data, #group-container-premium {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formcomponents .formcomponent{
+  width: 46% !important;
+  margin: 0 2% 8px 2%!important;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #000;
+  cursor: move !important;
+  justify-content: center !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  border: 1px dashed #b4afaf  !important;
+  border-radius: 0 !important;
+}
+
+.formcomponents .formcomponent i{
+  font-size: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+.form-group  .btn.btn-block.builder-group-button{
+  background: #F1F1F1 !important;
+  background: linear-gradient(180deg, #F3F3F3, #FEFEFE) !important;
+}
+
+.btn:focus, .btn.focus{
+  box-shadow: none !important;
+}
+
+.builder-components.drag-container .alert-info {
+  color: #502c61;
+  background-color: #f3f3f3;
+  border-color: #e2cfec;
+  border: 1px dashed #b4afaf  !important;
+}
+
+.form-control:focus{
+  border-color: var(--primary-color) !important;
+  box-shadow: none !important;
+}
+
+button.btn.btn-primary, button.btn.btn-primary:hover{
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover{
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+input[type='text'].form-control:hover,
+input[type='password'].form-control:hover,
+input[type='number'].form-control:hover,
+textarea:hover{
+  border-color: #767676 !important;
+}
+
+/* Fabric Checkbox */
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+}
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -2px;
+  left: -6px;
+  background-color: #fff;
+  border: 2px solid #a6a6a6;
+}
+
+input[type=checkbox]:hover::before {
+  border: 2px solid #767676;
+}
+
+input[type=checkbox]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -2px;
+  left: -6px;
+  background-color:var(--primary-color) !important;
+  border: 0 none;
+}
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+/* Fabric Radio */
+
+input[type=radio]  {
+  box-sizing: border-box;
+  padding: 0;
+  border: 2px solid;
+  border-radius: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "e-icons";
+  height: 15px;
+  line-height: 16px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 15px;
+  accent-color: var(--primary-color);
+
+  &:hover{
+      accent-color: var(--primary-color);
+  }
+}
+
+/* tab */
+
+.formio-component-tabs .card {
+  border: 0 none !important   ;
+  border-radius: 0 !important;
+}
+
+.formio-component-tabs .card .card-header {
+  background-color: #fff !important;
+  border-bottom: 0 none;
+}
+
+ul.nav.nav-tabs li a.nav-link.active{
+  border: 0 none;
+  background-color: transparent;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+ul.nav.nav-tabs .nav-link,
+ul.nav.nav-tabs .nav-link:hover,
+ul.nav.nav-tabs .nav-link:focus{
+  border: 0 none;
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+}
+
+ul.nav.nav-tabs .nav-link:hover,
+ul.nav.nav-tabs .nav-link:focus{
+  background-color: #f3f3f3;
+}
+
+/* Date Time */
+
+.formio-component-datetime .input-group .input-group-text{
+  border-radius: 0;
+  background-color: var(--primary-color) !important;
+}
+
+.formio-component-datetime .input-group-text i{
+  color: #fff !important;
+}
+
+.flatpickr-calendar{
+  right: 12px !important;
+  left: auto !important;
+  border-radius:0 !important ;
+}
+
+/* Select */
+
+select.form-control:hover{
+  border-color: #767676 !important;
+}
+
+/* Tags */
+
+.formio-component-tags .choices__list--multiple .choices__item {
+  padding: 8px !important;
+  border: 0;
+  background-color: var(--primary-color) !important;
+}
+
+.formio-component-tags .choices__inner{
+  background-color: #fff !important;
+}
+.formio-component-tags .choices__input {
+  padding: 2px;
+  border: 1px solid #ddd;
+  min-width: 70px !important;
+}
+
+.formio-component-tags .choices__item.is-highlighted {
+  background-color: var(--primary-color) !important;
+  border: 0 none !important;
+  color: #fff !important;
+}
+
+/* Survey */
+
+.formio-component-survey table{
+  background: #fff;
+}
+
+/* grid UI upgrade css */
+
+ejs-grid .e-gridheader{
+  border-top: 0 none !important;
+}
+
+ejs-grid .e-grid.e-resize-lines .e-headercell .e-rhandler,
+ejs-grid .e-grid.e-resize-lines .e-headercell .e-rsuppress{
+  border-right: 0 none !important;
+}
+
+.e-grid.e-resize-lines .e-headercell .e-rhandler,
+.e-grid.e-resize-lines .e-headercell .e-rsuppress {
+  border-right: 1px solid transparent !important;
+}
+
+
+.e-grid .e-gridheader .e-icons:not(.e-icon-hide):not(.e-check):not(.e-stop):not(.e-icon-reorderuparrow):not(.e-icon-reorderdownarrow) {
+  color: var(--primary-color) !important;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-menu-icon,
+.e-contextmenu-container ul .e-menu-item .e-menu-icon{
+  color: var(--primary-color) !important;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-selected .e-caret,
+.e-contextmenu-container ul .e-menu-item.e-selected .e-caret {
+  color: var(--primary-color) !important;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-caret,
+.e-contextmenu-container ul .e-menu-item .e-caret{
+  color: var(--primary-color) !important;
+}
+
+.e-columnheader .e-headercell:hover{
+  background : #f4f4f4
+}
+
+.e-btn.e-flat, .e-css.e-btn.e-flat
+.e-btn.e-flat:hover, .e-css.e-btn.e-flat:hover{
+  background : none !important;
+  border:0 none !important;
+  color: var(--primary-color) !important;
+}
+
+.e-grid td.e-active {
+  background: #f4f4f4;
+}
+
+.e-grid .e-focused:not(.e-menu-item):not(.e-editedbatchcell) {
+  box-shadow: none !important;
+}
+
+.e-grid .e-toolbar-items .e-toolbar-item.e-search-wrapper .e-search .e-search-icon{
+  background: #f4f4f4 !important;
+}
+
+.e-grid .e-search-icon::before{
+  color: var(--primary-color) !important;
+}

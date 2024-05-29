@@ -1,0 +1,16 @@
+<div class="setting-icon" (click)="showHideDrawer()"><i class="ph ph-gear"></i></div>
+
+<div class="setting-drawer" [ngClass]="showHideDrawerFlag ? 'drawer-open' : 'drawer-close'">
+  <div class="setting-drawer-header">
+      <i class="ph ph-gear"></i> Settings
+      <span class="close-btn" (click)="showHideDrawer()"><i class="ph ph-x"></i></span>
+  </div>
+  <div class="setting-data">
+    <p class="theme-text">THEME</p>
+    <ul>
+      <li class="tab"><span></span>TAB</li>
+      <li class="rose"><span></span>Rose</li>
+      <li class="phoenix"><span></span>Phoenix</li>
+    </ul>
+  </div>
+</div>

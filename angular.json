@@ -30,6 +30,9 @@
               "src/assets"
             ],
             "styles": [
+              "src/form-io-custom.scss",
+              "src/syncfusion-custom.scss",
+              "src/common.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -65,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "tab-demo:build:production"
+              "buildTarget": "tab-demo:build:production"
             },
             "development": {
-              "browserTarget": "tab-demo:build:development"
+              "buildTarget": "tab-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tab-demo:build"
+            "buildTarget": "tab-demo:build"
           }
         },
         "test": {

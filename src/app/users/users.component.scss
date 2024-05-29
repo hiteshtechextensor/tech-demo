@@ -1,0 +1,62 @@
+.card-container{
+  display: flex;
+}
+
+.user-card{
+  width: 420px;
+  padding: 0 16px 16px 16px;
+  display: inline-block;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  position: relative;
+  transition: all .2s ease-in-out;
+  border: 1px solid #FAFAFA;
+}
+
+.edit-btn{
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+  z-index: 9;
+}
+
+
+.user-card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.user {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-row span {
+  margin-left: 12px;
+}
+
+.card-row{
+  margin-top: 18px;
+}
+
+span.yes{
+  background: rgb(0, 116, 50);
+  color: #fff;
+  padding: 0 4px 2px 4px;
+  border-radius: 3px;
+}
+
+span.no{
+  background: rgb(112, 1, 10);
+  color: #fff;
+  padding: 0 4px 2px 4px;
+  border-radius: 3px;
+}
+
+.time-span{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  width: 100%;
+}
+

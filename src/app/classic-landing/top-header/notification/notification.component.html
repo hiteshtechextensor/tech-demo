@@ -1,0 +1,36 @@
+<!-- notification.component.html -->
+<div id="notification-popup" class="notification-popup">
+  <!-- Notification Header -->
+  <div class="notification-header">
+    <div class="notification-header-close">
+      <span class="action-icon"><i class="ph ph-x" (click)="closePopup()"></i></span>
+    </div>
+    <div class="notification-title">Notifications</div>
+    <div class="notification-header-action">
+      <span class="action-icon"><i class="ph ph-envelope"></i></span>
+    </div>
+  </div>
+  <!-- Notification Items -->
+  <div class="notification-item-container">
+    <div *ngFor="let notification of notifications" class="notification-item">
+      <div class="notification-content">
+        <div class="notification-icon">
+          <i class="ph">{{notification.icon}}</i>
+        </div>
+        <div class="notification-details">
+          <div class="notification-type">{{ notification.type }}</div>
+          <div class="notification-message">{{ notification.message }}</div>
+          <div class="notification-time">{{ notification.time }}</div>
+        </div>
+        <div class="notification-action">
+          <div class="notification-action-icons mark-icon" (click)="markAsRead(notification)">
+            <span class="blue-dot" [ngClass]="{'read': notification.read}"></span>
+          </div>
+          <div class="notification-action-icons remove-icon" (click)="removeNotification(notification)">
+            <i class="ph ph-x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

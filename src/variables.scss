@@ -1,0 +1,32 @@
+/* --------------------------------- */
+/*  Global Theme Variables            */
+/* --------------------------------- */
+
+
+
+/* Colors */
+:root {
+  --primary-color: #1967be !important;
+ // --primary-color: #E04440 !important;
+  --color-white:#FFFFFF;
+  --color-transparent:#00000000;
+}
+
+/* border */
+:root {
+  --border-opacity-1: 1;
+  --border-radius-4: 4px;
+  --border-width-2: 2px;
+  --border-style-solid:solid;
+}
+
+:root {
+  --font-size-17: 17px;
+  --font-weight-500:500;
+  --font-weight-400:400;
+}
+
+:root {
+  // fabric theme font family
+  --fabric-font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+}

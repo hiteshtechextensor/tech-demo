@@ -1,0 +1,36 @@
+/* SyncFusion Custom Tree View For Left Navigation */
+
+@import "variables.scss";
+
+.main-treeview{
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+
+.main-treeview .e-icon-collapsible,
+.main-treeview  .e-icon-expandable{
+    float: right;
+
+}
+
+.main-treeview.e-treeview .e-ul{
+  padding: 0 24px 0 0
+}
+
+.main-treeview.e-treeview .e-ul .e-ul{
+  padding: 0 0 0 24px
+}
+
+.main-treeview.e-treeview .e-list-item.e-active > .e-fullrow {
+  background-color:var(--primary-color);
+  border-color: var(--primary-color)
+}
+
+
+.main-treeview.e-treeview .e-list-item.e-active.e-hover > .e-fullrow,
+.main-treeview.e-treeview .e-list-item.e-active.e-node-focus > .e-fullrow {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: none !important;
+}
+
